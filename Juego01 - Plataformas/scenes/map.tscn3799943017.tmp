@@ -447,10 +447,13 @@ tile_set = SubResource("TileSet_0cso3")
 tile_map_data = PackedByteArray("AAAWABsABAAAAA0AAAAWABwABAAAAA4AAAAXABsABAABAA0AAAAXABwABAABAA4AAAAZABsABAAAAA0AAAAZABwABAAAAA4AAAAaABsABAABAA0AAAAaABwABAABAA4AAAAbABoABAAAAA0AAAAbABsABAAAAA4AAAAcABoABAABAA0AAAAcABsABAABAA4AAAAYABwABAACAA0AAAAYAB0ABAACAA4AAAAdABoABAACAA0AAAAdABsABAACAA4AAAAeABkABAAAAA0AAAAeABoABAAAAA4AAAAfABkABAABAA0AAAAfABoABAABAA4AAAAgABkABAACAA0AAAAgABoABAACAA4AAAAUABwABAAAAAwAAAAVABwABAABAAwAAAAZAB0ABAAIAAcAAAAVAB0ABAAGAAcAAAAWAB0ABAAHAAcAAAAeABsABAAGAAcAAAAfABsABAAHAAcAAAAcABwABAAGAAcAAAAdABwABAAHAAcAAAAbABwABAAIAAcAAAAaAB0ABAAJAAcAAAAUAB0ABAAKAAcAAAA=")
 tile_set = SubResource("TileSet_cpvxe")
 
-[node name="counted" parent="." unique_id=1241743678 instance=ExtResource("5_2klcf")]
-
 [node name="player" parent="." unique_id=532790865 instance=ExtResource("4_nakos")]
-position = Vector2(367, 420)
+position = Vector2(367, 421)
 
 [node name="coin" parent="." unique_id=1122074392 instance=ExtResource("4_0cso3")]
-position = Vector2(416, 421)
+position = Vector2(415, 421)
+
+[node name="coin2" parent="." unique_id=774368722 instance=ExtResource("4_0cso3")]
+position = Vector2(455, 404)
+
+[node name="counted" parent="." unique_id=1241743678 instance=ExtResource("5_2klcf")]
