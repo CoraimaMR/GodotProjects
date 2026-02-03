@@ -44,7 +44,7 @@ Pantalla de fin
   Botón “Volver a jugar”</p>
 
 <h2>8. Arte</h2>
-<p>El arte ha sido descargado desde itch.io del creador kevins-moms-house donde se puede ver en este [enlace]([enlace](https://kevins-moms-house.itch.io/four-seasons-platformer-tileset)) y también en este [enlace]([enlace](https://kevins-moms-house.itch.io/four-seasons-platformer-sprites))</p>
+<p>El arte ha sido descargado desde itch.io del creador kevins-moms-house donde se puede ver en este (enlace)(https://kevins-moms-house.itch.io/four-seasons-platformer-tileset) y también en este (enlace)(https://kevins-moms-house.itch.io/four-seasons-platformer-sprites)</p>
 
 <h2>7. Sonido</h2>
 <p>Se pondra música simple al recolectar monedas, al inicio y final del juego</p>
