@@ -6,15 +6,7 @@ const JUMP_VELOCITY = -250.0 # Velocidad vertical del salto (negativa = hacia ar
 
 # Referencias a nodos en la escena
 @onready var anim = $Sprite2D # Sprite del personaje para animaciones
-@onready var hud = get_node("/root/map/counted") # HUD de monedas (contador)
 @onready var jump_sound = $Jump # Sonido que se reproduce al saltar
-
-var coins = 0 # Contador de monedas recogidas
-
-# Función para sumar monedas y actualizar el HUD
-func add_coin():
-	coins += 1 # Incrementa el contador
-	hud.set_coins(coins) # Llama a la función del HUD para mostrar las monedas
 
 # Función principal que se ejecuta cada frame de física
 func _physics_process(delta: float) -> void:

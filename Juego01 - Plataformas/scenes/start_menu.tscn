@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dfcqchphkb37s"]
+
+[ext_resource type="Script" uid="uid://dpyepae5sunxj" path="res://scripts/start_menu.gd" id="1_ouf4f"]
+
+[node name="start_menu" type="Control" unique_id=1504911603]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ouf4f")
+
+[node name="Button" type="Button" parent="." unique_id=1451518999]
+layout_mode = 0
+offset_left = 362.0
+offset_top = 301.0
+offset_right = 767.0
+offset_bottom = 445.0
+text = "INICIAR"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

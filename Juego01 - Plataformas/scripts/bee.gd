@@ -7,8 +7,8 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 		body.velocity.y = -300 # Aplica un impulso hacia arriba
 		queue_free() # Se elimina tras usarse
 
-# Función que se llama cuando un cuerpo entra en el área
-func _on_body_entered(body: Node2D) -> void:
+# Área que mata al jugador
+func _on_area_2d_2_body_entered(body: Node2D) -> void:
 	# Comprobar si el cuerpo que entró es el jugador
 	if body.is_in_group("player"):
-		get_tree().call_deferred("reload_current_scene") # Reinicia la escena
+		get_tree().call_deferred("change_scene_to_file", "res://scenes/game_over_menu.tscn") # Va al menu de derrota
