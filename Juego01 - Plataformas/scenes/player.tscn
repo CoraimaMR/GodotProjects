@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dr2rmfbqppd1q" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://56uhcds6lydq" path="res://assets/Sprites [Enemies]/Mushroom/Mushroom_3/Mushroom_3.png" id="2_g2els"]
+[ext_resource type="AudioStream" uid="uid://bjf5ukblmuvib" path="res://musicandsound/sound/Jump.mp3" id="3_qhqgy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g2els"]
 atlas = ExtResource("2_g2els")
@@ -123,3 +124,8 @@ shape = SubResource("CircleShape2D_g2els")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=9672993]
 zoom = Vector2(3.5, 3.5)
+
+[node name="Jump" type="AudioStreamPlayer2D" parent="." unique_id=2063709774]
+position = Vector2(3, -10)
+stream = ExtResource("3_qhqgy")
+volume_db = -15.0

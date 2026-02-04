@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://ccteh6jan2glh"]
 
 [ext_resource type="Texture2D" uid="uid://cb5pr4gne41hg" path="res://assets/fourSeasonsPlatformer_ [tileset, version 2.0]/objects_/coin_.png" id="1_rwqht"]
-[ext_resource type="Script" uid="uid://bmfgnfutnaaek" path="res://scripts/coin.gd" id="2_i64fm"]
+[ext_resource type="Script" uid="uid://c8uxc15wdm2sb" path="res://scripts/coin.gd" id="2_i64fm"]
+[ext_resource type="AudioStream" uid="uid://cvlt1j137mg1b" path="res://musicandsound/sound/Coin.ogg" id="3_11l1o"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i64fm"]
 atlas = ExtResource("1_rwqht")
@@ -109,5 +110,9 @@ frame_progress = 0.0537506
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1318914533]
 shape = SubResource("CircleShape2D_ssuvv")
 
+[node name="Coin" type="AudioStreamPlayer2D" parent="." unique_id=713033448]
+position = Vector2(3, 7)
+stream = ExtResource("3_11l1o")
+volume_db = -10.0
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
-[connection signal="body_entered" from="." to="AnimatedSprite2D" method="_on_coin_body_entered"]
