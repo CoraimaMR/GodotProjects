@@ -47,7 +47,7 @@ func _physics_process(delta: float) -> void:
 		# Desacelera suavemente
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
-	move_and_slide()  # Aplica la velocidad considerando colisiones
+	move_and_slide() # Aplica la velocidad considerando colisiones
 
 	# Animaciones
 	if not is_on_floor() and velocity.y < 0:

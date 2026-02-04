@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://ci7fehstxqwqc"
-path="res://.godot/imported/POL-king-of-coins-short.wav-af9642222ca55625fc59b674f34f9753.sample"
+path="res://.godot/imported/POL-king-of-coins-short.wav-028cb4e554e82ce5676486178e2e5596.sample"
 
 [deps]
 
-source_file="res://musicandsound/music/POL-king-of-coins-short.wav"
-dest_files=["res://.godot/imported/POL-king-of-coins-short.wav-af9642222ca55625fc59b674f34f9753.sample"]
+source_file="res://music_and_sound/music/POL-king-of-coins-short.wav"
+dest_files=["res://.godot/imported/POL-king-of-coins-short.wav-028cb4e554e82ce5676486178e2e5596.sample"]
 
 [params]
 

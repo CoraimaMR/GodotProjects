@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cb5pr4gne41hg" path="res://assets/fourSeasonsPlatformer_ [tileset, version 2.0]/objects_/coin_.png" id="1_rwqht"]
 [ext_resource type="Script" uid="uid://c8uxc15wdm2sb" path="res://scripts/coin.gd" id="2_i64fm"]
-[ext_resource type="AudioStream" uid="uid://cvlt1j137mg1b" path="res://musicandsound/sound/Coin.ogg" id="3_11l1o"]
+[ext_resource type="AudioStream" uid="uid://cvlt1j137mg1b" path="res://music_and_sound/sound/Coin.ogg" id="3_11l1o"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i64fm"]
 atlas = ExtResource("1_rwqht")

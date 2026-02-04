@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cxdxe7uqit2my"
-path="res://.godot/imported/POL-spinning-gears-short.wav-246ce3706a75e9bd334b43bed3fcadaf.sample"
+path="res://.godot/imported/POL-spinning-gears-short.wav-aeb4cfb07dffcdace9400fc409aa3997.sample"
 
 [deps]
 
-source_file="res://musicandsound/music/POL-spinning-gears-short.wav"
-dest_files=["res://.godot/imported/POL-spinning-gears-short.wav-246ce3706a75e9bd334b43bed3fcadaf.sample"]
+source_file="res://music_and_sound/music/POL-spinning-gears-short.wav"
+dest_files=["res://.godot/imported/POL-spinning-gears-short.wav-aeb4cfb07dffcdace9400fc409aa3997.sample"]
 
 [params]
 
