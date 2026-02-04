@@ -4,8 +4,34 @@
 <p>Un juego de plataformas donde un champiñón va saltando y esquivando obstáculos para recolectar todas las monedas y poder pasar de nivel.</p>
 
 <h2>2. Jugador</h2>
-<p>Personaje visto desde un lateral. Se mueve en las 4 direcciones.<br>
-Controles: Teclas AWSD o flechas del teclado.</p>
+<p>Personaje visto desde un lateral. Se mueve en 2 direcciones.<br>
+Controles:<br></p>
+<table align="center">
+  <thead>
+    <tr>
+      <th>Acción</th>
+      <th>Controles</th>
+      <th>Animación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Mover</b></td>
+      <td><code>A</code> <code>D</code> / <code>←</code> <code>→</code></td>
+      <td><code>walk</code></td>
+    </tr>
+    <tr>
+      <td><b>Saltar</b></td>
+      <td><code>W</code> <code>Espacio</code> / <code>↑</code></td>
+      <td><code>jump</code></td>
+    </tr>
+    <tr>
+      <td><b>Monedas</b></td>
+      <td>Colisión automática</td>
+      <td><code>add_coin()</code></td>
+    </tr>
+  </tbody>
+</table>
 
 <h2>3. Mecánica principal</h2>
 <p>Recolectar monedas: Las monedas aparecen en el mapa predeterminadamente. Cuando el jugador toca una moneda:<br>
@@ -25,17 +51,29 @@ Controles: Teclas AWSD o flechas del teclado.</p>
  - Se muestra la puntuación final.</p>
 
 <h2>7. Pantallas del juego</h2>
-<p>Pantalla inicial<br>
- - Botón “Jugar”<br>
- - Pantalla de juego<br>
- - Jugador<br>
- - Monedas<br>
- - Puntos<br>
- - Tiempo<br>
-Pantalla de fin<br>
- - Texto: “Fin del juego”<br>
- - Puntuación final<br>
- - Botón “Volver a jugar”</p>
+<p><b>Pantallas del juego:</b><br></p>
+<table align="center">
+  <thead>
+    <tr>
+      <th>Pantalla</th>
+      <th>Elementos y Funciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Inicial</b></td>
+      <td>▶️ Botón <code>Jugar</code></td>
+    </tr>
+    <tr>
+      <td><b>Juego</b></td>
+      <td>🕹️ Jugador | 🪙 Monedas | 🏆 Puntos | ⏱️ Tiempo</td>
+    </tr>
+    <tr>
+      <td><b>Fin</b></td>
+      <td>💀 "Fin del juego" | 🔢 Score final | 🔄 Botón <code>Volver</code></td>
+    </tr>
+  </tbody>
+</table>
 
 <h2>8. Arte</h2>
 <p>
@@ -45,7 +83,8 @@ Pantalla de fin<br>
 </p>
 
 <h2>7. Sonido</h2>
-<p>Se pondra música simple al recolectar monedas, al inicio y final del juego</p>
+<p>Se pondra música simple al recolectar monedas, al inicio y final del juego.<br>
+Creditos a <a href="https://www.patreon.com/posts/musica-y-sonidos-136243456?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Luis Canari</a>.</p>
 
 <h2>8. Objetivo del proyecto</h2>
 <p>Aprender:<br>
