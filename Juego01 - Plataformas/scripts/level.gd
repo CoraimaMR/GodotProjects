@@ -1,4 +1,4 @@
-extends Node2D # Control general del nivel
+extends Node2D # Control general de los niveles
 
 # Constantes del nivel
 const COINS_WIN = 10 # Cantidad de monedas para ganar el nivel
@@ -6,6 +6,7 @@ const COINS_WIN = 10 # Cantidad de monedas para ganar el nivel
 # Variables del nivel
 var coins = 0 # Contador real de monedas recogidas (vive aquí para no reiniciarse)
 
+# Referencias a nodos en la escena
 @onready var player = $player # Referencia al jugador
 @onready var timer = $Timer # Temporizador del nivel
 @onready var hud = $hud # Referencia al nodo HUD
@@ -28,8 +29,9 @@ func _process(_delta):
 		timer.stop() # Detiene el temporizador
 		# Si no tiene las monedas necesarias
 		if coins < COINS_WIN:
-			get_tree().change_scene_to_file("res://scenes/game_over_menu.tscn") # Menú derrota
+			get_tree().call_deferred("change_scene_to_file", "res://scenes/game_over_menu.tscn") # Va al menu de derrota
 
+# Función que se ejecuta cuando se completa un nivel
 func level_completed():
 	timer.stop() # Detiene el temporizador
 	

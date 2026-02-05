@@ -5,6 +5,7 @@
 [ext_resource type="FontFile" uid="uid://5i1alwm8oh0m" path="res://assets/Fontpack/kirifont/KiriFont.ttf" id="2_h61rw"]
 [ext_resource type="Texture2D" uid="uid://cnyuphn5js0gg" path="res://assets/menu/Button.png" id="2_thu50"]
 [ext_resource type="FontFile" uid="uid://4dwa7bs18gmc" path="res://assets/Fontpack/showpop/Showpop.otf" id="4_h61rw"]
+[ext_resource type="AudioStream" uid="uid://be20ug1teseoy" path="res://music_and_sound/music/freesound_community-menu-53679.mp3" id="6_4v6gu"]
 
 [node name="start_menu" type="Control" unique_id=1504911603]
 layout_mode = 3
@@ -54,5 +55,10 @@ theme_override_constants/outline_size = 40
 theme_override_fonts/font = ExtResource("4_h61rw")
 theme_override_font_sizes/font_size = 120
 text = "PLATAFORMAS"
+
+[node name="music" type="AudioStreamPlayer" parent="." unique_id=849069160]
+stream = ExtResource("6_4v6gu")
+volume_db = -10.0
+autoplay = true
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

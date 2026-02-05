@@ -7,6 +7,7 @@
 [ext_resource type="FontFile" uid="uid://5i1alwm8oh0m" path="res://assets/Fontpack/kirifont/KiriFont.ttf" id="4_bktib"]
 [ext_resource type="Texture2D" uid="uid://bsia6ogb7ody2" path="res://assets/menu/ret.png" id="5_kxgey"]
 [ext_resource type="Texture2D" uid="uid://cn0e6kkneap7x" path="res://assets/menu/Buttonp.png" id="6_a7waj"]
+[ext_resource type="AudioStream" uid="uid://cb88cpchhg7ov" path="res://music_and_sound/music/freesound_crunchpixstudio-purchase-success-384963.mp3" id="6_kxgey"]
 [ext_resource type="Texture2D" uid="uid://botjrttc52lf1" path="res://assets/menu/starts.png" id="7_tihof"]
 
 [node name="victory_menu" type="Control" unique_id=440948846]
@@ -64,6 +65,10 @@ theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("3_tihof")
 theme_override_font_sizes/font_size = 40
 text = "VICTORIA"
+
+[node name="music" type="AudioStreamPlayer" parent="." unique_id=2028153147]
+stream = ExtResource("6_kxgey")
+autoplay = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=958253480]
 clip_contents = true

@@ -1,4 +1,4 @@
-extends Control # Menú final
+extends Control # MENÚ DE INICIO
 
 func _on_button_pressed() -> void:
 	get_tree().call_deferred("change_scene_to_file", "res://scenes/map1.tscn") # Reintenta el nivel 1

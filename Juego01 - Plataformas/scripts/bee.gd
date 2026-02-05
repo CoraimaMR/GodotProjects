@@ -1,4 +1,4 @@
-extends Node2D # Nodo con dos áreas: una que impulsa al jugador y otra que mata
+extends Node2D # BEE
 
 # Área que impulsa al jugador hacia arriba
 func _on_area_2d_body_entered(body: Node2D) -> void:

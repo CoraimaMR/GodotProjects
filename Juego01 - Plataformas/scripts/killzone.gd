@@ -1,4 +1,4 @@
-extends Area2D # Área que carga la escena al tocarla el jugador
+extends Area2D # KILLZONE
 
 # Función que se llama cuando un cuerpo entra en el área
 func _on_body_entered(body: Node2D) -> void:

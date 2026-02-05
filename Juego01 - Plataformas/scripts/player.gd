@@ -1,4 +1,4 @@
-extends CharacterBody2D # Clase base para personajes 2D con movimiento y colisiones
+extends CharacterBody2D # PLAYER
 
 # Constantes del personaje
 const SPEED = 150.0 # Velocidad horizontal del personaje

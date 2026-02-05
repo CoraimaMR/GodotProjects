@@ -1,5 +1,6 @@
-extends CanvasLayer  # Capa del HUD siempre visible
+extends CanvasLayer  # HUB
 
+# Referencias a nodos en la escena
 @onready var coin_label = $Control/counter_coin/Label # Label de monedas
 
 # Función para actualizar la cantidad de monedas en el HUD

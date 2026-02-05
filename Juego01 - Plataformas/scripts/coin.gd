@@ -1,5 +1,6 @@
-extends Area2D  # Área que detecta colisiones con el jugador (moneda)
+extends Area2D # COIN
 
+# Referencias a nodos en la escena
 @onready var animated_sprite = $AnimatedSprite2D # Sprite animado de la moneda
 @onready var collision = $CollisionShape2D # Colisión de la moneda
 @onready var pickup_sound = $Coin # Sonido que se reproduce al recoger
@@ -8,7 +9,7 @@ extends Area2D  # Área que detecta colisiones con el jugador (moneda)
 func _on_body_entered(body: Node2D) -> void:
 	# Comprobar si el cuerpo que entró es el jugador
 	if body.is_in_group("player"):
-		# Buscamos al dueño de la escena (Level) y sumamos la moneda allí
+		# Buscamos al dueño de la escena y sumamos la moneda allí
 		var level = get_tree().current_scene
 		if level.has_method("add_coin"):
 			level.add_coin() 

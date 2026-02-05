@@ -1191,8 +1191,7 @@ autostart = true
 [node name="killzone" parent="." unique_id=1597124731 instance=ExtResource("7_yex4a")]
 position = Vector2(3, 1)
 
-[node name="PolStarWayShort" type="AudioStreamPlayer2D" parent="." unique_id=1358094154]
-position = Vector2(331, 417)
+[node name="PolTestYourSkillsShort" type="AudioStreamPlayer" parent="." unique_id=1835899800]
 stream = ExtResource("8_5puhf")
 volume_db = -20.0
 autoplay = true
