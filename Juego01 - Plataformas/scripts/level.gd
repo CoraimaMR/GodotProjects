@@ -1,16 +1,16 @@
 extends Node2D # Control general de los niveles
 
-# Constantes del nivel
-const COINS_WIN = 10 # Cantidad de monedas para ganar el nivel
+# Constantes de level
+const COINS_WIN = 10
 
-# Variables del nivel
-var coins = 0 # Contador real de monedas recogidas (vive aquí para no reiniciarse)
+# Variables de level
+var coins = 0
 
 # Referencias a nodos en la escena
-@onready var player = $player # Referencia al jugador
-@onready var timer = $Timer # Temporizador del nivel
-@onready var hud = $hud # Referencia al nodo HUD
-@onready var time_label = $hud/counter_time # Label del tiempo dentro del HUD
+@onready var player = $characters_group/player
+@onready var timer = $Timer
+@onready var hud = $hud
+@onready var time_label = $hud/counter_time
 
 # Función para sumar monedas y actualizar el HUD
 func add_coin():

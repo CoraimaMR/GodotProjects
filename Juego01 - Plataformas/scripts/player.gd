@@ -1,14 +1,14 @@
 extends CharacterBody2D # PLAYER
 
-# Constantes del personaje
-const SPEED = 150.0 # Velocidad horizontal del personaje
-const JUMP_VELOCITY = -250.0 # Velocidad vertical del salto (negativa = hacia arriba)
+# Constantes de player
+const SPEED = 150.0
+const JUMP_VELOCITY = -250.0
 
 # Referencias a nodos en la escena
-@onready var anim = $Sprite2D # Sprite del personaje para animaciones
-@onready var jump_sound = $Jump # Sonido que se reproduce al saltar
+@onready var anim = $Sprite2D
+@onready var jump_sound = $Jump
 
-# Función principal que se ejecuta cada frame de física
+# Función principal que se ejecutae cada frame de física
 func _physics_process(delta: float) -> void:
    
  # Aplicar gravedad
@@ -38,9 +38,9 @@ func _physics_process(delta: float) -> void:
 	else:
 		# Desacelera suavemente
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-
+	
 	move_and_slide() # Aplica la velocidad considerando colisiones
-
+	
 	# Animaciones
 	if not is_on_floor() and velocity.y < 0:
 		anim.play("jump")

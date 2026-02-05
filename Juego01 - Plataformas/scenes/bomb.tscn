@@ -1,10 +1,8 @@
 [gd_scene format=3 uid="uid://baun2pr06d667"]
 
 [ext_resource type="Texture2D" uid="uid://cllgpmu4rfyna" path="res://assets/Sprites [Enemies]/Bomb/Bomb.png" id="1_4kkau"]
-[ext_resource type="Script" uid="uid://dnca1d433cr3o" path="res://scripts/bomb.gd" id="1_j15uc"]
+[ext_resource type="Script" uid="uid://bjol3nmf0j3um" path="res://scripts/bomb.gd" id="1_j15uc"]
 [ext_resource type="AudioStream" uid="uid://c6up2hw7fv0j0" path="res://music_and_sound/sound/driken5482-retro-explode-1-236678.mp3" id="2_vpdcx"]
-
-[sub_resource type="Curve2D" id="Curve2D_4kkau"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vpdcx"]
 atlas = ExtResource("1_4kkau")
@@ -90,7 +88,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_poanl")
 }],
-"loop": true,
+"loop": false,
 "name": &"ded_bomb",
 "speed": 5.0
 }, {
@@ -135,14 +133,10 @@ size = Vector2(11, 9)
 [node name="bomb" type="Node2D" unique_id=1669508712]
 script = ExtResource("1_j15uc")
 
-[node name="Path2D" type="Path2D" parent="." unique_id=78451647]
-curve = SubResource("Curve2D_4kkau")
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=932060873]
 sprite_frames = SubResource("SpriteFrames_m3s2y")
 animation = &"walk"
-autoplay = "default"
-frame_progress = 0.95269597
+autoplay = "walk"
 
 [node name="Driken5482RetroExplode1236678" type="AudioStreamPlayer" parent="." unique_id=60471624]
 stream = ExtResource("2_vpdcx")
@@ -150,7 +144,7 @@ stream = ExtResource("2_vpdcx")
 [node name="Area2D" type="Area2D" parent="." unique_id=142099081]
 
 [node name="topbomb" type="CollisionPolygon2D" parent="Area2D" unique_id=2040815544]
-position = Vector2(0, -1)
+scale = Vector2(1.2, 1.2)
 polygon = PackedVector2Array(5, 1, 0, -5, -2, -5, -2, -1, -5, 1)
 
 [node name="Area2D2" type="Area2D" parent="." unique_id=1735505675]
@@ -158,3 +152,6 @@ polygon = PackedVector2Array(5, 1, 0, -5, -2, -5, -2, -1, -5, 1)
 [node name="bottombomb" type="CollisionShape2D" parent="Area2D2" unique_id=1055764038]
 position = Vector2(0.5, 5.5)
 shape = SubResource("RectangleShape2D_3nocn")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Area2D2" to="." method="_on_area_2d_2_body_entered"]
