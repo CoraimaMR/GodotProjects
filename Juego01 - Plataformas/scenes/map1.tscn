@@ -656,15 +656,15 @@ autoplay = true
 [node name="enemige_group" type="CanvasGroup" parent="." unique_id=2034598161]
 position = Vector2(968, 203)
 
-[node name="bee3" parent="enemige_group" unique_id=1948051788 instance=ExtResource("11_1bs4p")]
-position = Vector2(-30.999939, 15.000015)
-scale = Vector2(1.25, 1.25)
+[node name="bee" parent="enemige_group" unique_id=1938963498 instance=ExtResource("11_1bs4p")]
+position = Vector2(-578, 140)
 
 [node name="bee2" parent="enemige_group" unique_id=250903921 instance=ExtResource("11_1bs4p")]
 position = Vector2(-327, 14)
 
-[node name="bee" parent="enemige_group" unique_id=1938963498 instance=ExtResource("11_1bs4p")]
-position = Vector2(-578, 140)
+[node name="bee3" parent="enemige_group" unique_id=1948051788 instance=ExtResource("11_1bs4p")]
+position = Vector2(-30.999939, 15.000015)
+scale = Vector2(1.25, 1.25)
 
 [node name="coin_group" type="CanvasGroup" parent="." unique_id=2095882813]
 

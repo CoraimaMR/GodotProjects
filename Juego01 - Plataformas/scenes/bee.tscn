@@ -54,7 +54,6 @@ script = ExtResource("1_vie5o")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=30144437]
 sprite_frames = SubResource("SpriteFrames_cgwtv")
 autoplay = "default"
-frame_progress = 0.015246533
 
 [node name="BeeFlying" type="AudioStreamPlayer2D" parent="." unique_id=116224394]
 position = Vector2(-17, 0)

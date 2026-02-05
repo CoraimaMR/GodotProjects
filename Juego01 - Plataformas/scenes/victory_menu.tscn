@@ -1,15 +1,13 @@
 [gd_scene format=3 uid="uid://bfa7r85fqnoso"]
 
 [ext_resource type="Script" uid="uid://biklsl7ggmh5i" path="res://scripts/final_menu.gd" id="1_hs5er"]
+[ext_resource type="Texture2D" uid="uid://diafv3faxptx0" path="res://assets/menu/BG.png" id="2_bktib"]
 [ext_resource type="Texture2D" uid="uid://daxwhr0l5l8ng" path="res://assets/menu/menuh.png" id="2_vds54"]
 [ext_resource type="FontFile" uid="uid://4dwa7bs18gmc" path="res://assets/Fontpack/showpop/Showpop.otf" id="3_tihof"]
 [ext_resource type="FontFile" uid="uid://5i1alwm8oh0m" path="res://assets/Fontpack/kirifont/KiriFont.ttf" id="4_bktib"]
 [ext_resource type="Texture2D" uid="uid://bsia6ogb7ody2" path="res://assets/menu/ret.png" id="5_kxgey"]
 [ext_resource type="Texture2D" uid="uid://cn0e6kkneap7x" path="res://assets/menu/Buttonp.png" id="6_a7waj"]
 [ext_resource type="Texture2D" uid="uid://botjrttc52lf1" path="res://assets/menu/starts.png" id="7_tihof"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_alani"]
-load_path = "res://.godot/imported/BG.png-ad3935d68dbd732b38ad9a667693c5c0.ctex"
 
 [node name="victory_menu" type="Control" unique_id=440948846]
 layout_mode = 3
@@ -18,15 +16,42 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_hs5er")
 
-[node name="background" type="Sprite2D" parent="." unique_id=1386180474]
-position = Vector2(574.0001, 325.00006)
-scale = Vector2(0.388, 0.36722222)
-texture = SubResource("CompressedTexture2D_alani")
+[node name="background" type="TextureRect" parent="." unique_id=187064031]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 28.799994
+anchor_bottom = 16.2
+offset_right = -0.0007324219
+offset_bottom = -0.00048828125
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bktib")
+expand_mode = 1
 
-[node name="menu" type="Sprite2D" parent="." unique_id=1518609228]
-position = Vector2(575, 313)
+[node name="menu" type="TextureRect" parent="." unique_id=217306966]
+physics_interpolation_mode = 0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 196.99998
+offset_top = 7.0000305
+offset_right = 1106.9999
+offset_bottom = 730.0
+grow_horizontal = 2
+grow_vertical = 2
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_vds54")
+stretch_mode = 3
+
+[node name="start" type="TextureRect" parent="." unique_id=1528360214]
+layout_mode = 0
+offset_left = 205.0
+offset_top = 16.0
+offset_right = 939.0
+offset_bottom = 601.0
+texture = ExtResource("7_tihof")
+stretch_mode = 3
 
 [node name="Label" type="Label" parent="." unique_id=1327150667]
 layout_mode = 0
@@ -40,26 +65,20 @@ theme_override_fonts/font = ExtResource("3_tihof")
 theme_override_font_sizes/font_size = 40
 text = "VICTORIA"
 
-[node name="Button" type="Button" parent="." unique_id=1638788243]
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=958253480]
+clip_contents = true
 layout_mode = 0
-offset_left = 645.0
-offset_top = 422.0
-offset_right = 860.0
-offset_bottom = 654.0
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("4_bktib")
-theme_override_font_sizes/font_size = 20
-icon = ExtResource("5_kxgey")
-flat = true
-clip_text = true
-icon_alignment = 1
+offset_left = 286.0
+offset_top = 424.0
+offset_right = 875.0
+offset_bottom = 656.0
+theme_override_constants/separation = 125
+alignment = 1
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
 
-[node name="Button2" type="Button" parent="." unique_id=1221134850]
-layout_mode = 0
-offset_left = 283.0
-offset_top = 425.0
-offset_right = 498.0
-offset_bottom = 657.0
+[node name="Button2" type="Button" parent="HBoxContainer" unique_id=1221134850]
+layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0.14223737, 0.71163654, 0.90416694, 1)
 theme_override_constants/outline_size = 20
@@ -71,10 +90,15 @@ flat = true
 clip_text = true
 icon_alignment = 1
 
-[node name="Starts" type="Sprite2D" parent="." unique_id=118630968]
-position = Vector2(573, 302.00003)
-scale = Vector2(1.0129352, 0.89965147)
-texture = ExtResource("7_tihof")
+[node name="Button" type="Button" parent="HBoxContainer" unique_id=1638788243]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_bktib")
+theme_override_font_sizes/font_size = 20
+icon = ExtResource("5_kxgey")
+flat = true
+clip_text = true
+icon_alignment = 1
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/Button" to="." method="_on_button_pressed"]

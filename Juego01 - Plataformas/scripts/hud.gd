@@ -4,4 +4,4 @@ extends CanvasLayer  # Capa del HUD siempre visible
 
 # Función para actualizar la cantidad de monedas en el HUD
 func set_coins(amount):
-	coin_label.text = str(amount)  # Convierte el número a texto y lo muestra
+	coin_label.text = str(amount)+"/10"  # Convierte el número a texto y lo muestra
