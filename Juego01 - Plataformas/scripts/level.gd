@@ -39,6 +39,6 @@ func level_completed():
 	var next_map = "res://scenes/map" + str(next_level) + ".tscn" # Construimos el siguiente archivo
 	
 	if ResourceLoader.exists(next_map): # Verificamos si el archivo del siguiente nivel existe
-		get_tree().change_scene_to_file(next_map) # Cargamos el siguiente nivel
+		get_tree().call_deferred("change_scene_to_file", next_map) # Cargamos el siguiente nivel
 	else:
-		get_tree().change_scene_to_file("res://scenes/victory_menu.tscn") # Va al menu de derrota
+		get_tree().call_deferred("change_scene_to_file", "res://scenes/victory_menu.tscn") # Va al menu de derrota
