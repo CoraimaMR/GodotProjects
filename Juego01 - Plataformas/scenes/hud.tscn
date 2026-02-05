@@ -17,28 +17,27 @@ offset_bottom = 109.0
 [node name="counter_coin" type="Node2D" parent="Control" unique_id=666839897]
 
 [node name="Label" type="Label" parent="Control/counter_coin" unique_id=1105510822]
-offset_left = 95.0
-offset_top = 5.0
-offset_right = 187.0
-offset_bottom = 115.0
+offset_left = 81.0
+offset_top = 9.0
+offset_right = 207.0
+offset_bottom = 92.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.75686276)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8784314)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 3
-theme_override_constants/shadow_outline_size = 20
-theme_override_font_sizes/font_size = 70
+theme_override_constants/shadow_outline_size = 16
+theme_override_font_sizes/font_size = 50
 text = "0/10"
 
 [node name="Sprite2D" type="Sprite2D" parent="Control/counter_coin" unique_id=247072638]
-position = Vector2(54, 56)
-scale = Vector2(6, 6)
+position = Vector2(44, 46)
+scale = Vector2(5, 5.3125)
 texture = ExtResource("2_5ysmq")
 hframes = 12
 
 [node name="counter_time" type="Label" parent="." unique_id=322487267]
 offset_left = 20.0
-offset_right = 242.0
-offset_bottom = 110.0
+offset_right = 89.0
+offset_bottom = 83.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
