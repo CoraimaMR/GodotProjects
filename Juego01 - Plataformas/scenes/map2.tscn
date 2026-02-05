@@ -1197,32 +1197,36 @@ stream = ExtResource("8_5puhf")
 volume_db = -20.0
 autoplay = true
 
-[node name="coin" parent="." unique_id=1122074392 instance=ExtResource("9_yeuea")]
-position = Vector2(232, 366)
+[node name="enemige_group" type="CanvasGroup" parent="." unique_id=882570053]
 
-[node name="coin2" parent="." unique_id=1894956509 instance=ExtResource("9_yeuea")]
-position = Vector2(371, 338)
+[node name="coin_group" type="CanvasGroup" parent="." unique_id=930327962]
 
-[node name="coin3" parent="." unique_id=455837748 instance=ExtResource("9_yeuea")]
-position = Vector2(504, 346)
+[node name="coin10" parent="coin_group" unique_id=1910339194 instance=ExtResource("9_yeuea")]
+position = Vector2(231, 123)
 
-[node name="coin4" parent="." unique_id=1981283669 instance=ExtResource("9_yeuea")]
-position = Vector2(689, 280)
-
-[node name="coin5" parent="." unique_id=1244069035 instance=ExtResource("9_yeuea")]
-position = Vector2(1000, 235)
-
-[node name="coin6" parent="." unique_id=1001400865 instance=ExtResource("9_yeuea")]
-position = Vector2(828, 251)
-
-[node name="coin7" parent="." unique_id=591785805 instance=ExtResource("9_yeuea")]
-position = Vector2(593, 197)
-
-[node name="coin8" parent="." unique_id=385154940 instance=ExtResource("9_yeuea")]
-position = Vector2(313, 106)
-
-[node name="coin9" parent="." unique_id=1270789588 instance=ExtResource("9_yeuea")]
+[node name="coin9" parent="coin_group" unique_id=1270789588 instance=ExtResource("9_yeuea")]
 position = Vector2(481, 145)
 
-[node name="coin10" parent="." unique_id=1910339194 instance=ExtResource("9_yeuea")]
-position = Vector2(231, 123)
+[node name="coin8" parent="coin_group" unique_id=385154940 instance=ExtResource("9_yeuea")]
+position = Vector2(313, 106)
+
+[node name="coin7" parent="coin_group" unique_id=591785805 instance=ExtResource("9_yeuea")]
+position = Vector2(593, 197)
+
+[node name="coin6" parent="coin_group" unique_id=1001400865 instance=ExtResource("9_yeuea")]
+position = Vector2(828, 251)
+
+[node name="coin5" parent="coin_group" unique_id=1244069035 instance=ExtResource("9_yeuea")]
+position = Vector2(1000, 235)
+
+[node name="coin4" parent="coin_group" unique_id=1981283669 instance=ExtResource("9_yeuea")]
+position = Vector2(689, 280)
+
+[node name="coin3" parent="coin_group" unique_id=455837748 instance=ExtResource("9_yeuea")]
+position = Vector2(504, 346)
+
+[node name="coin2" parent="coin_group" unique_id=1894956509 instance=ExtResource("9_yeuea")]
+position = Vector2(371, 338)
+
+[node name="coin" parent="coin_group" unique_id=1122074392 instance=ExtResource("9_yeuea")]
+position = Vector2(232, 366)

@@ -1,6 +1,12 @@
 [gd_scene format=3 uid="uid://dfcqchphkb37s"]
 
 [ext_resource type="Script" uid="uid://dpyepae5sunxj" path="res://scripts/start_menu.gd" id="1_ouf4f"]
+[ext_resource type="FontFile" uid="uid://5i1alwm8oh0m" path="res://assets/Fontpack/kirifont/KiriFont.ttf" id="2_h61rw"]
+[ext_resource type="Texture2D" uid="uid://cnyuphn5js0gg" path="res://assets/menu/Button.png" id="2_thu50"]
+[ext_resource type="FontFile" uid="uid://4dwa7bs18gmc" path="res://assets/Fontpack/showpop/Showpop.otf" id="4_h61rw"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_m7x51"]
+load_path = "res://.godot/imported/BG.png-ad3935d68dbd732b38ad9a667693c5c0.ctex"
 
 [node name="start_menu" type="Control" unique_id=1504911603]
 layout_mode = 3
@@ -9,12 +15,39 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_ouf4f")
 
+[node name="background" type="Sprite2D" parent="." unique_id=1965847933]
+modulate = Color(0.41568628, 1, 1, 1)
+position = Vector2(574, 325.5)
+scale = Vector2(0.388, 0.36722222)
+texture = SubResource("CompressedTexture2D_m7x51")
+
 [node name="Button" type="Button" parent="." unique_id=1451518999]
 layout_mode = 0
-offset_left = 362.0
-offset_top = 301.0
-offset_right = 767.0
-offset_bottom = 445.0
+offset_left = 355.0
+offset_top = 314.0
+offset_right = 797.0
+offset_bottom = 531.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.120062925, 0.684775, 0.87624025, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_h61rw")
+theme_override_font_sizes/font_size = 60
 text = "INICIAR"
+icon = ExtResource("2_thu50")
+flat = true
+clip_text = true
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="." unique_id=495288818]
+layout_mode = 0
+offset_left = 125.0
+offset_top = 108.0
+offset_right = 1015.0
+offset_bottom = 253.0
+theme_override_colors/font_outline_color = Color(0.23529412, 0.45882353, 0.6039216, 1)
+theme_override_constants/outline_size = 40
+theme_override_fonts/font = ExtResource("4_h61rw")
+theme_override_font_sizes/font_size = 120
+text = "PLATAFORMAS"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
