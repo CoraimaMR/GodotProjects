@@ -1,11 +1,14 @@
-<h1>JUEGO 01: PLATAFORMAS</h1>
+# JUEGO 01: PLATAFORMAS
 
-<h2>1. Idea general</h2>
+# 📖 Documento de Diseño de Juego (GDD)
+
+## 1. Idea general 💡
 <p>Un juego de plataformas donde un champiñón va saltando y esquivando obstáculos para recolectar todas las monedas y poder pasar de nivel.</p>
 
-<h2>2. Jugador</h2>
-<p>Personaje visto desde un lateral. Se mueve en 2 direcciones.<br>
-Controles:<br></p>
+## 2. Jugador 🙍🏻‍♂️
+Personaje visto desde un lateral. Se mueve en 2 direcciones.
+
+Controles:
 <table align="center">
   <thead>
     <tr>
@@ -33,25 +36,26 @@ Controles:<br></p>
   </tbody>
 </table>
 
-<h2>3. Mecánica principal</h2>
-<p>Recolectar monedas: Las monedas aparecen en el mapa predeterminadamente. Cuando el jugador toca una moneda:<br>
- - La moneda desaparece.<br>
- - El jugador gana puntos.<br>
- - Suena un sonido simple.</p>
+## 3. Mecánica principal
+Recolectar monedas: Las monedas aparecen en el mapa predeterminadamente. Cuando el jugador toca una moneda:
 
-<h2>4. Monedas</h2>
-<p>Cada moneda vale 1 punto y cuando se recojan todas en un tiempo límite se pasa de nivel.</p>
+- La moneda desaparece.
+- El jugador gana puntos.
+- Suena un sonido simple.
 
-<h2>5. Puntuación</h2>
-<p>Cada moneda suma puntos. La puntuación se muestra en pantalla a la par que se recolectan.</p>
+## 4. Monedas y puntuación
+Cada moneda vale 1 punto y cuando se recojan todas en un tiempo límite se pasa de nivel.
+Cada moneda suma puntos. La puntuación se muestra en pantalla a la par que se recolectan.
 
-<h2>6. Tiempo de juego</h2>
-<p>Cada nivel dura 60 segundos. El tiempo se muestra en pantalla. Cuando el tiempo llega a 0:<br>
- - El juego termina.<br>
- - Se muestra la puntuación final.</p>
+## 5. Tiempo de juego
+Cada nivel dura un tiempo predeterminado dependiendo de la dificultad El tiempo se muestra en pantalla. Cuando el tiempo llega a 0:
 
-<h2>7. Pantallas del juego</h2>
-<p><b>Pantallas del juego:</b><br></p>
+- El juego termina.
+- Se muestra la puntuación final.
+
+## 6. Pantallas del juego
+Pantallas del juego:
+
 <table align="center">
   <thead>
     <tr>
@@ -75,23 +79,22 @@ Controles:<br></p>
   </tbody>
 </table>
 
-<h2>8. Arte</h2>
-<p>
-  El arte ha sido descargado desde itch.io del creador <strong>kevins-moms-house</strong>. Los recursos están disponibles en estos enlaces:<br>
-  <a href="https://kevins-moms-house.itch.io](https://kevins-moms-house.itch.io](https://kevins-moms-house.itch.io/four-seasons-platformer-tileset">enlace para los fondos</a> y 
-  <a href="https://kevins-moms-house.itch.io](https://kevins-moms-house.itch.io](https://kevins-moms-house.itch.io/four-seasons-platformer-sprites">enlace para los personajes</a>.
-</p>
+## 7. Créditos
+El arte ha sido descargado desde itch.io del creador **kevins-moms-house**. Los recursos están disponibles en estos enlaces:[enlace para los fondos](https://kevins-moms-house.itch.io/four-seasons-platformer-tileset) y [enlace para los personajes](https://kevins-moms-house.itch.io/four-seasons-platformer-sprites).
 
-<h2>7. Sonido</h2>
-<p>Se pondra música simple al recolectar monedas, al inicio y final del juego.<br>
-Creditos a <a href="https://www.patreon.com/posts/musica-y-sonidos-136243456?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Luis Canari</a>.</p>
+La música simple de fondo y los sonidos se han descargado de este creador [Luis Canari](https://www.patreon.com/posts/musica-y-sonidos-136243456?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link).
 
-<h2>8. Objetivo del proyecto</h2>
-<p>Aprender:<br>
- - Movimiento del jugador<br>
- - Colisiones<br>
- - Contador de puntos<br>
- - Temporizador<br>
- - Cambiar escenas<br>
- - Sonidos<br>
+## 7. Objetivo del proyecto
+Aprender:
+
+- Movimiento del jugador
+- Colisiones
+- Contador de puntos
+- Temporizador
+- Cambiar escenas
+- Sonidos
+
 Juego pequeño y terminable.</p>
+
+---
+_Documento actualizado a 05 de febrero de 2026 - Versión 1.3_
