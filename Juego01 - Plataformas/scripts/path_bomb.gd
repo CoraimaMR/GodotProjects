@@ -1,4 +1,4 @@
-extends PathFollow2D #PATHFOLLW
+extends PathFollow2D #PATHFOLLW BOMB
 
 # Constantes para el camino
 const SPEED = 20.0

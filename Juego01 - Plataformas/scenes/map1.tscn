@@ -224,7 +224,7 @@ sources/2 = SubResource("TileSetAtlasSource_wslke")
 
 [sub_resource type="Curve2D" id="Curve2D_lpe66"]
 _data = {
-"points": PackedVector2Array(-0.32701585, 52.159027, 0.32701585, -52.159027, 453, 352, 0.3794202, -43.55725, -0.3794202, 43.55725, 514, 352, -0.41004467, 42.099464, 0.41004467, -42.099464, 453, 352)
+"points": PackedVector2Array(30.647598, 0.29037416, -30.647598, -0.29037416, -586, 147, -40.662, 0.12284592, 40.662, -0.12284592, -586, 101, 28.322437, 0.22103086, -28.322437, -0.22103086, -586, 147)
 }
 point_count = 3
 
@@ -655,19 +655,20 @@ position = Vector2(968, 203)
 [node name="player" parent="characters_group" unique_id=532790865 instance=ExtResource("6_x1kdh")]
 position = Vector2(-769, 166)
 
-[node name="Path2D" type="Path2D" parent="characters_group" unique_id=1001307358]
-position = Vector2(-1067, -233)
+[node name="Path2D" type="Path2D" parent="characters_group" unique_id=175278895]
 curve = SubResource("Curve2D_lpe66")
 
-[node name="PathFollow2D" type="PathFollow2D" parent="characters_group/Path2D" unique_id=1638884539]
-position = Vector2(506.31778, 328.23953)
-progress = 80.0
+[node name="PathFollow2D" type="PathFollow2D" parent="characters_group/Path2D" unique_id=1442414907]
+position = Vector2(-565.62195, 107.5469)
+progress = 100.85
 rotates = false
 cubic_interp = false
 script = ExtResource("7_srta2")
 
-[node name="bee" parent="characters_group/Path2D/PathFollow2D" unique_id=113137799 instance=ExtResource("11_1bs4p")]
-position = Vector2(5, 0)
+[node name="bee" parent="characters_group/Path2D/PathFollow2D" unique_id=1938963498 instance=ExtResource("11_1bs4p")]
+
+[node name="AnimatedSprite2D" parent="characters_group/Path2D/PathFollow2D/bee" index="0" unique_id=30144437]
+flip_h = true
 
 [node name="Path2D2" type="Path2D" parent="characters_group" unique_id=930117525]
 curve = SubResource("Curve2D_srta2")
@@ -680,7 +681,10 @@ cubic_interp = false
 script = ExtResource("7_srta2")
 
 [node name="bee" parent="characters_group/Path2D2/PathFollow2D" unique_id=679614275 instance=ExtResource("11_1bs4p")]
-position = Vector2(5, 0)
+
+[node name="AnimatedSprite2D" parent="characters_group/Path2D2/PathFollow2D/bee" index="0" unique_id=30144437]
+animation = &"angry_bee"
+autoplay = "angry_bee"
 
 [node name="Path2D3" type="Path2D" parent="characters_group" unique_id=2113533099]
 curve = SubResource("Curve2D_bwvye")
@@ -692,8 +696,7 @@ rotates = false
 cubic_interp = false
 script = ExtResource("7_srta2")
 
-[node name="bee" parent="characters_group/Path2D3/PathFollow2D" unique_id=1938963498 instance=ExtResource("11_1bs4p")]
-position = Vector2(5, 0)
+[node name="bee" parent="characters_group/Path2D3/PathFollow2D" unique_id=1060390135 instance=ExtResource("11_1bs4p")]
 
 [node name="plataformas" type="TileMapLayer" parent="." unique_id=1239109917]
 position = Vector2(1, -3)
@@ -703,7 +706,7 @@ tile_set = SubResource("TileSet_cpvxe")
 [node name="hud" parent="." unique_id=1241743678 instance=ExtResource("7_rimy1")]
 
 [node name="Timer" type="Timer" parent="." unique_id=1530969110]
-wait_time = 20.0
+wait_time = 30.0
 one_shot = true
 autostart = true
 
@@ -747,3 +750,6 @@ position = Vector2(890, 202)
 
 [node name="coin10" parent="coin_group" unique_id=862745018 instance=ExtResource("10_ol6j0")]
 position = Vector2(968, 203)
+
+[editable path="characters_group/Path2D/PathFollow2D/bee"]
+[editable path="characters_group/Path2D2/PathFollow2D/bee"]
