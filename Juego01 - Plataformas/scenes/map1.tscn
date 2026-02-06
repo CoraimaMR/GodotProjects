@@ -638,7 +638,6 @@ physics_layer_0/collision_layer = 1
 sources/4 = SubResource("TileSetAtlasSource_k1npa")
 
 [node name="map" type="Node2D" unique_id=2101304837]
-position = Vector2(12, 2)
 script = ExtResource("1_k348l")
 
 [node name="cielo" type="TileMapLayer" parent="." unique_id=916661610]
