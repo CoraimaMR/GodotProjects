@@ -3,7 +3,7 @@
 # 📖 Documento de Diseño de Juego (GDD)
 
 ## 1. Idea general 💡
-<p>Un juego de plataformas donde un champiñón va saltando y esquivando obstáculos para recolectar todas las monedas y poder pasar de nivel.</p>
+Un juego de plataformas donde un champiñón va saltando y esquivando obstáculos para recolectar todas las monedas y poder pasar de nivel.
 
 ## 2. Jugador 🙍🏻‍♂️
 Personaje visto desde un lateral. Se mueve en 2 direcciones.
@@ -84,7 +84,7 @@ El arte ha sido descargado desde itch.io del creador **kevins-moms-house**. Los 
 
 La música simple de fondo y los sonidos se han descargado de este creador [Luis Canari](https://www.patreon.com/posts/musica-y-sonidos-136243456?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link).
 
-## 7. Objetivo del proyecto
+## 8. Objetivo del proyecto
 Aprender:
 
 - Movimiento del jugador
@@ -94,7 +94,7 @@ Aprender:
 - Cambiar escenas
 - Sonidos
 
-Juego pequeño y terminable.</p>
+Juego pequeño y terminable.
 
 ---
 _Documento actualizado a 05 de febrero de 2026 - Versión 1.3_
